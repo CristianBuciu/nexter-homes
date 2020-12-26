@@ -1,0 +1,20 @@
+@import "../../sass/base";
+
+.sidebar {
+    background-color: $color-cta;
+    position: absolute;
+    top: 0;
+    left: -35rem;
+    width: 40rem;
+    height: 100vh;
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+    &--active {
+        left: 0;
+    }
+    &__hamburger-menu {
+        color: $color-secondary;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

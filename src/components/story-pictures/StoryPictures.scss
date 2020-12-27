@@ -1,0 +1,8 @@
+@import "../../sass/base";
+
+.story {
+    &__pictures {
+        background-color: $color-grey-light-1;
+        grid-column: full-start / col-end 4;
+    }
+}

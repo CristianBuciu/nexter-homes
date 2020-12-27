@@ -1,0 +1,8 @@
+@import "../../sass/base";
+
+.story {
+    &__content {
+        background-color: pink;
+        grid-column: col-start 5 / full-end;
+    }
+}

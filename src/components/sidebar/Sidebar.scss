@@ -2,7 +2,8 @@
 
 .sidebar {
     background-color: $color-cta;
-    position: absolute;
+    box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.1), 0 0.5rem 3rem rgba($color: #000000, $alpha: 0.2);
+    position: fixed;
     top: 0;
     left: -35rem;
     width: 40rem;

@@ -1,17 +1,53 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #b28451;
-$color-cta: #affa23;
+$color-primary: #affa23;
+$color-primary-dark: #10162f;
+$color-cta: rgb(8, 138, 83);
 $color-secondary: #101d2c;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
-$color-grey-dark-1: #54483a;
-$color-grey-dark-2: #6d5d4b;
+$color-grey-dark-1: #312d29;
+$color-grey-dark-2: #292826;
 
 // FONT VARIABLES
 $font-primary: "Nunito", sans-serif;
 $font-secundary: "Josefin Sans", sans-serif;
 $font-special: "BioRhyme", serif;
-$font-display: "Josefin Sans", sans-serif;
+
+$shadow-normal: 0 0.5rem 1rem
+        rgba(
+            $color: #000000,
+            $alpha: 0.05,
+        ),
+    0 0.25rem 1rem
+        rgba(
+            $color: #000000,
+            $alpha: 0.1,
+        );
+
+$shadow-young: -0.75rem 0.75rem 0 #10162f;
+%heading {
+    font-family: $font-special;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+}
+.heading-2 {
+    @extend %heading;
+}
+.heading-3 {
+    @extend %heading;
+}
+.heading-4 {
+    @extend %heading;
+    font-size: 2rem;
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}

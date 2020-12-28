@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-      <div className="container">
+      <div className="grid-container">
         <Header />
         <HeaderRealtors />
         <FeaturesSection />

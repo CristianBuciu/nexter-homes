@@ -1,14 +1,13 @@
 // COLOR VARIABLES
-$color-primary: #affa23;
+$color-primary: #ffdc82;
 $color-primary-dark: #10162f;
-$color-cta: rgb(8, 138, 83);
-$color-secondary: #101d2c;
+$color-cta: #f0c351;
 
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
+$color-grey-light-1: #fff7f7;
+$color-grey-light-2: #efd9ca;
 
-$color-grey-dark-1: #312d29;
-$color-grey-dark-2: #292826;
+$color-grey-dark-1: #444549;
+$color-grey-dark-2: #19191a;
 
 // FONT VARIABLES
 $font-primary: "Nunito", sans-serif;
@@ -26,7 +25,8 @@ $shadow-normal: 0 0.5rem 1rem
             $alpha: 0.1,
         );
 
-$shadow-young: -0.75rem 0.75rem 0 #10162f;
+$shadow-young: -0.5rem 0.5rem 0 #10162f;
+$shadow-young-clicked: -0.25rem 0.25rem 0 #10162f;
 %heading {
     font-family: $font-special;
     font-weight: 400;
@@ -37,9 +37,21 @@ $shadow-young: -0.75rem 0.75rem 0 #10162f;
 }
 .heading-2 {
     @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 .heading-3 {
     @extend %heading;
+    font-size: 1.6rem;
+    color: $color-cta;
+    text-transform: uppercase;
 }
 .heading-4 {
     @extend %heading;
@@ -48,6 +60,46 @@ $shadow-young: -0.75rem 0.75rem 0 #10162f;
         color: $color-grey-light-1;
     }
     &--dark {
-        color: $color-grey-dark-1;
+        color: $color-primary-dark;
     }
+}
+
+.button {
+    background-color: $color-cta;
+    color: $color-primary-dark;
+    border: none;
+    border-radius: 0;
+    font-family: $font-secundary;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    &:hover {
+        transform: translateX(0.5rem) translateY(-0.5rem);
+        box-shadow: $shadow-young;
+        border: 1px solid $color-primary-dark;
+    }
+    &:active {
+        box-shadow: $shadow-young-clicked;
+        transform: translateX(0.25rem) translateY(-0.25rem);
+        border-radius: 0;
+    }
+    &:focus {
+        border-radius: 0;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 4rem;
+}
+
+.mb-lg {
+    margin-bottom: 8rem;
 }

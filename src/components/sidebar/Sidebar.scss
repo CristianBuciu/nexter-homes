@@ -1,7 +1,7 @@
 @import "../../sass/base";
 
 .sidebar {
-    background-color: rgba($color: $color-primary, $alpha: 0.7);
+    background-color: rgba($color: $color-cta, $alpha: 0.7);
     backdrop-filter: blur(1rem);
     border-right: 1px solid $color-primary-dark;
     position: fixed;

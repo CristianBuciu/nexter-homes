@@ -2,7 +2,16 @@
 
 .story {
     &__content {
-        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: $color-grey-light-1;
         grid-column: col-start 5 / full-end;
+        padding: 6rem 5vw;
+    }
+    &__text {
+        font-size: 1.6rem;
+        font-style: italic;
     }
 }

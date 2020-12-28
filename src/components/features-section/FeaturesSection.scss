@@ -30,7 +30,7 @@
     }
     &:hover {
         cursor: pointer;
-        transform: translateX(0.75rem) translateY(-0.75rem);
+        transform: translateX(0.5rem) translateY(-0.5rem);
         box-shadow: $shadow-young;
         border: 1px solid $color-primary-dark;
     }

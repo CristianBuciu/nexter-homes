@@ -14,15 +14,20 @@ $font-primary: "Nunito", sans-serif;
 $font-secundary: "Josefin Sans", sans-serif;
 $font-special: "BioRhyme", serif;
 
-$shadow-normal: 0 0.5rem 1rem
+$shadow-normal: 0 1rem 2rem
         rgba(
             $color: #000000,
-            $alpha: 0.05,
+            $alpha: 0.15,
+        ),
+    0 0.5rem 1rem
+        rgba(
+            $color: #000000,
+            $alpha: 0.1,
         ),
     0 0.25rem 1rem
         rgba(
             $color: #000000,
-            $alpha: 0.1,
+            $alpha: 0.2,
         );
 
 $shadow-young: -0.5rem 0.5rem 0 #10162f;

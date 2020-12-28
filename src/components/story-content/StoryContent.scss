@@ -9,6 +9,9 @@
         background-color: $color-grey-light-1;
         grid-column: col-start 5 / full-end;
         padding: 6rem 5vw;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 1;
     }
     &__text {
         font-size: 1.6rem;

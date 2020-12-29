@@ -1,8 +1,8 @@
 import React from "react";
-import "./GallerySection.scss";
+import "./Testimonials.scss";
 //!=========================================================
-const GallerySection = () => {
+const Testimonials = () => {
   return <section className="gallery">hello from gallery section</section>;
 };
 
-export default GallerySection;
+export default Testimonials;

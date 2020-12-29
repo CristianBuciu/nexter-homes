@@ -3,7 +3,7 @@ $color-primary: #ffdc82;
 $color-primary-dark: #10162f;
 $color-cta: #f0c351;
 
-$color-grey-light-1: #fff7f7;
+$color-grey-light-1: #fcf9f9;
 $color-grey-light-2: #efd9ca;
 
 $color-grey-dark-1: #444549;
@@ -42,9 +42,9 @@ $shadow-young-clicked: -0.25rem 0.25rem 0 #10162f;
 }
 .heading-2 {
     @extend %heading;
-    font-size: 4rem;
+    font-size: 2.8rem;
     font-style: italic;
-    line-height: 1;
+    line-height: 1.2;
     &--light {
         color: $color-grey-light-1;
     }
@@ -107,4 +107,13 @@ $shadow-young-clicked: -0.25rem 0.25rem 0 #10162f;
 
 .mb-lg {
     margin-bottom: 8rem;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    &:visited {
+        color: inherit;
+        text-decoration: none;
+    }
 }

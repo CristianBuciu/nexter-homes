@@ -4,15 +4,29 @@
     background-color: rgba($color: $color-cta, $alpha: 0.7);
     backdrop-filter: blur(1rem);
     border-right: 1px solid $color-primary-dark;
+    color: $color-primary-dark;
     position: fixed;
     top: 0;
-    left: -35rem;
-    width: 40rem;
+    left: -20rem;
+    width: 25rem;
     height: 100vh;
     z-index: 10;
     transition: 0.4s ease-in-out;
+
     &--active {
         left: 0;
+    }
+    &__icons {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        justify-items: end;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        padding: 1rem;
+    }
+    &__icon {
+        font-size: 3rem;
     }
     &__hamburger-menu {
         color: $color-primary-dark;

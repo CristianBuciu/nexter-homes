@@ -1,8 +1,8 @@
 import React from "react";
-import "./HomesSection.scss";
+import "./PropertiesSection.scss";
 //!=========================================================
-const HomesSection = () => {
+const PropertiesSection = () => {
   return <section className="homes">hello from homes section</section>;
 };
 
-export default HomesSection;
+export default PropertiesSection;

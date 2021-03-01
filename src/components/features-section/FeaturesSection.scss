@@ -1,0 +1,37 @@
+@import "../../sass/base";
+
+.features {
+  grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+  align-items: start;
+}
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+  &__icon {
+    font-size: 4.5rem;
+    color: $color-primary;
+    stroke: $color-primary;
+    grid-row: 1 / span 2;
+    // transform: translateY(-1rem);
+  }
+  &__text {
+    font-size: 1.6rem;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: translateX(0.5rem) translateY(-0.5rem);
+    box-shadow: $shadow-young;
+    border: 1px solid $color-primary-dark;
+  }
+}

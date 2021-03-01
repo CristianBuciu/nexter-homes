@@ -1,0 +1,93 @@
+@import "../../sass/base";
+
+.homes {
+  grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 7rem;
+  row-gap: 7rem;
+}
+
+.home-card {
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5rem;
+  &__heart {
+    padding: 0.5rem;
+    color: $color-grey-dark-1;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 3.2rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    z-index: 2;
+    justify-self: flex-end;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    transition: all $transition;
+    &:hover {
+      box-shadow: $shadow-normal;
+    }
+  }
+  &__img {
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    z-index: 1;
+  }
+  &__name {
+    font-size: 1.6rem;
+    font-family: $font-special;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: $color-primary-dark;
+    color: white;
+    font-weight: 400;
+    width: 80%;
+    box-shadow: $shadow-normal;
+
+    justify-self: center;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 2;
+    align-self: flex-end;
+    transform: translateY(50%);
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  &__location {
+    margin-top: 1.75rem;
+  }
+  &__rooms {
+    margin-top: 1.75rem;
+  }
+
+  &__cta-button {
+    grid-column: 1/-1;
+    font-size: 1.8rem;
+    background-color: $color-cta;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-grey-light-1;
+    }
+  }
+  &__icons {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: $color-primary;
+  }
+  p {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}

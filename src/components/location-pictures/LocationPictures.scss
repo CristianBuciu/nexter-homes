@@ -1,63 +1,71 @@
 @import "../../sass/base";
 
 .location {
-    &__pictures {
-        background-image: linear-gradient(to right, rgba(white, 1), rgba($color-grey-light-1, 1));
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
-        background-color: $color-grey-light-1;
-        grid-column: full-start / col-end 4;
+  &__pictures {
+    background-image: linear-gradient(
+      to right,
+      rgba(white, 1),
+      rgba($color-grey-light-1, 1)
+    );
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-color: $color-grey-light-1;
+    grid-column: full-start / col-end 4;
 
-        display: grid;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-columns: repeat(8, 1fr);
-        align-items: center;
-        opacity: 0;
-        transform: translateX(-100%);
-        z-index: 2;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 2;
+    @media (min-width: 320px) and (max-width: 480px) {
+      grid-column: full-start / full-end;
+      height: 25rem;
     }
-    &__img--1 {
-        width: 100%;
-        grid-row: 2 / 6;
-        grid-column: 2 / 6;
-        z-index: 1;
-        cursor: pointer;
-        transition: 0.2s all ease-in-out;
-        &:hover {
-            z-index: 3;
-            transform: scale(1.2);
-            transform-origin: center;
-            box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
-        }
+  }
+  &__img--1 {
+    width: 100%;
+    grid-row: 2 / 6;
+    grid-column: 2 / 6;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      z-index: 3;
+      transform: scale(1.2);
+      transform-origin: center;
+      box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
     }
-    &__img--2 {
-        width: 115%;
-        grid-row: 3 /5;
-        grid-column: 5 / 8;
-        z-index: 0;
-        cursor: pointer;
-        transition: 0.2s all ease-in-out;
-        &:hover {
-            z-index: 3;
-            transform: scale(1.4);
-            transform-origin: center;
-            box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
-        }
+  }
+  &__img--2 {
+    width: 115%;
+    grid-row: 3 /5;
+    grid-column: 5 / 8;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      z-index: 3;
+      transform: scale(1.4);
+      transform-origin: center;
+      box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
     }
-    &__img--3 {
-        transform: translateY(-1.5rem) scale(1);
-        width: 120%;
-        grid-row: 6 /8;
-        grid-column: 3 / 7;
-        z-index: 1;
-        cursor: pointer;
-        transition: 0.2s all ease-in-out;
-        &:hover {
-            transform: scale(1.15);
-            transform-origin: center;
-            z-index: 3;
-            box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
-        }
+  }
+  &__img--3 {
+    transform: translateY(-1.5rem) scale(1);
+    width: 120%;
+    grid-row: 6 /8;
+    grid-column: 3 / 7;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      transform: scale(1.15);
+      transform-origin: center;
+      z-index: 3;
+      box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
     }
+  }
 }

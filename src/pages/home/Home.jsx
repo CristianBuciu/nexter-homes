@@ -19,8 +19,10 @@ const Home = () => {
       <Header />
       <HeaderRealtors />
       <FeaturesSection />
-      <LocationPictures />
-      <LocationContent />
+   
+        <LocationPictures />
+        <LocationContent />
+ 
       <PropertiesSection />
       <GridGallerySection />
       <Testimonials />

@@ -1,20 +1,23 @@
 @import "../../sass/base";
 
 .location {
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: $color-grey-light-1;
-        grid-column: col-start 5 / full-end;
-        padding: 6rem 5vw;
-        transform: translateX(100%);
-        opacity: 0;
-        z-index: 1;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $color-grey-light-1;
+    grid-column: col-start 5 / full-end;
+    padding: 6rem 5vw;
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+    @media (min-width: 320px) and (max-width: 480px) {
+      grid-column: full-start / full-end;
     }
-    &__text {
-        font-size: 1.6rem;
-        font-style: italic;
-    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-style: italic;
+  }
 }

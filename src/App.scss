@@ -2,4 +2,7 @@
 
 .App {
   margin-left: 5rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-left: 0;
+  }
 }

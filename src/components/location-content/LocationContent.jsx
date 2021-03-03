@@ -42,7 +42,9 @@ const StoryContent = () => {
         nemo veritatis consequatur et provident excepturi corporis repellendus
         blanditiis illo tempore cum nisi.{" "}
       </p>
-      <button className="button">check our best properties</button>
+      <button className="button location__button">
+        check our best properties
+      </button>
     </div>
   );
 };

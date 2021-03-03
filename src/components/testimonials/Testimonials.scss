@@ -34,6 +34,10 @@
   padding: 1rem;
   background-color: $color-grey-light-1;
   transition: $transition;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   &:hover {
     box-shadow: $shadow-young;
     transform: translateX(0.5rem) translateY(-0.5rem);
@@ -61,6 +65,7 @@
     font-weight: 600;
     color: $color-primary;
     text-align: center;
+    margin-top: auto;
   }
 }
 

@@ -1,6 +1,38 @@
 @import "../../sass/base";
 
 .realtors {
-    background-color: violet;
-    grid-column: col-start 7 / full-end;
+  background-color: $color-primary-dark;
+  grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    padding: 4rem 2rem;
+    grid-column: full-start / full-end;
+  }
+  &__heading {
+    color: $color-cta;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 2rem;
+    row-gap: 5vh;
+    align-items: center;
+  }
+
+  &__image {
+    width: 10rem;
+    border-radius: 50%;
+    display: block;
+  }
+  &__sold {
+    color: $color-grey-light-2;
+    text-transform: uppercase;
+    margin-top: -3px;
+  }
 }

@@ -33,10 +33,11 @@ const Testimonials = () => {
         </div>
 
         <blockquote>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          tempore delectus eligendi quidem veritatis omnis corporis suscipit, et
-          veniam doloremque enim vero quis ad fugiat consequuntur corrupti
-          minima. Non dignissimos minus reiciendis.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+          maxime, quod voluptatum odio modi suscipit dicta tenetur voluptatibus
+          velit aperiam vitae perspiciatis rem quos, deleniti recusandae omnis
+          nostrum libero aut sunt maiores! Recusandae beatae fugiat voluptatem
+          debitis iusto, deserunt molestiae magni vel!
         </blockquote>
         <p className="testimonial__name">Frank Castle</p>
       </div>
@@ -50,10 +51,9 @@ const Testimonials = () => {
         </div>
 
         <blockquote>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          tempore delectus eligendi quidem veritatis omnis corporis suscipit, et
-          veniam doloremque enim vero quis ad fugiat consequuntur corrupti
-          minima. Non dignissimos minus reiciendis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem
+          dolor minus. Nam, officiis. Necessitatibus repudiandae inventore
+          aperiam nulla totam iste corrupti nobis autem impedit aliquam.
         </blockquote>
         <p className="testimonial__name">Matt Murdock</p>
       </div>

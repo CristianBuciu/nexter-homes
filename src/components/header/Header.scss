@@ -11,13 +11,26 @@
   background-position: center;
   padding: 4rem 8rem;
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   justify-content: center;
   row-gap: 1.5rem;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    padding: 4rem 2rem;
+    grid-column: full-start / full-end;
+  }
 
   &__h3 {
     color: $color-cta;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.8rem;
+    }
+  }
+  &__h1 {
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 4rem;
+    }
   }
   &__logo {
     height: 3rem;
@@ -50,8 +63,10 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3rem;
     justify-items: center;
+    align-items: center;
     img {
-      height: 2.5rem;
+      max-height: 2.5rem;
+      max-width: 100%;
       filter: brightness(90%);
     }
   }
@@ -59,5 +74,18 @@
   &__button {
     align-self: center;
     justify-self: flex-start;
+
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.8rem;
+      padding: 1rem 0.75rem;
+    }
+    &:hover {
+      transform: translateX(0.5rem) translateY(-0.5rem);
+      box-shadow: -0.5rem 0.5rem 0 $color-grey-light-1;
+      border: 1px solid transparent;
+    }
   }
 }

@@ -12,7 +12,9 @@
   height: 100vh;
   z-index: 10;
   transition: 0.4s ease-in-out;
-
+  @media (min-width: 320px) and (max-width: 480px) {
+    left: -25rem;
+  }
   &--active {
     left: 0;
   }
@@ -39,5 +41,25 @@
   transition: $transition;
   &:hover {
     color: $color-primary;
+  }
+}
+
+.hamburger-menu-mobile {
+  color: $color-primary-dark;
+  display: none;
+  width: 7rem;
+  height: 7rem;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: $color-grey-dark-1;
+    box-shadow: $shadow-normal;
+    border-radius: 50%;
+    z-index: 3;
   }
 }

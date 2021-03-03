@@ -20,4 +20,9 @@
     font-size: 1.6rem;
     font-style: italic;
   }
+  &__button {
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: 0 auto;
+    }
+  }
 }

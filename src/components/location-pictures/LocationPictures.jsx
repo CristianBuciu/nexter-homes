@@ -31,21 +31,27 @@ const StoryPictures = () => {
 
   return (
     <div ref={picturesRef} className="location__pictures">
-      <img
-        src="https://images.pexels.com/photos/2468773/pexels-photo-2468773.jpeg?cs=srgb&dl=pexels-kenneth-carpina-2468773.jpg&fm=jpg"
-        alt="a couple"
-        className="location__img--1"
-      />
-      <img
-        src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?cs=srgb&dl=pexels-patryk-kamenczak-775219.jpg&fm=jpg"
-        alt="a house"
-        className="location__img--2"
-      />
-      <img
-        src="https://images.pexels.com/photos/32870/pexels-photo.jpg?cs=srgb&dl=pexels-chris-goodwin-32870.jpg&fm=jpg"
-        alt="a house"
-        className="location__img--3"
-      />
+      <div className="location__img--1">
+        <img
+          src="https://images.pexels.com/photos/2468773/pexels-photo-2468773.jpeg?cs=srgb&dl=pexels-kenneth-carpina-2468773.jpg&fm=jpg"
+          alt="a couple"
+          className="location__img"
+        />
+      </div>
+      <div className="location__img--2">
+        <img
+          src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?cs=srgb&dl=pexels-patryk-kamenczak-775219.jpg&fm=jpg"
+          alt="a house"
+          className="location__img"
+        />
+      </div>
+      <div className="location__img--3">
+        <img
+          src="https://images.pexels.com/photos/32870/pexels-photo.jpg?cs=srgb&dl=pexels-chris-goodwin-32870.jpg&fm=jpg"
+          alt="a house"
+          className="location__img"
+        />
+      </div>
     </div>
   );
 };

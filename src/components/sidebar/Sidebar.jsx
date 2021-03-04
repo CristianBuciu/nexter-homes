@@ -18,38 +18,38 @@ const Sidebar = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
         <div className="sidebar__icons">
-          <NavLink className="link" to="/realtors">
+          <NavLink className="link" to="#">
             <h3 className="heading-4 heading-4--dark link">Professionals</h3>
           </NavLink>
-          <NavLink className="link" to="/realtors">
+          <NavLink className="link" to="#">
             <IoIosPerson className="sidebar__icon " title="Realtors" />
           </NavLink>
 
-          <NavLink className="link" to="/properties">
+          <NavLink className="link" to="#">
             <h3 className="heading-4 heading-4--dark link">Properties</h3>
           </NavLink>
-          <NavLink className="link" to="/properties">
+          <NavLink className="link" to="#">
             <GiHouseKeys className="sidebar__icon " title="Properties" />
           </NavLink>
 
-          <NavLink className="link" to="/destinations">
+          <NavLink className="link" to="#">
             <h3 className="heading-4 heading-4--dark link">Destinations</h3>
           </NavLink>
-          <NavLink className="link" to="/destinations">
+          <NavLink className="link" to="#">
             <GoLocation className="sidebar__icon " title="Destinations" />
           </NavLink>
 
-          <NavLink className="link" to="/news">
+          <NavLink className="link" to="#">
             <h3 className="heading-4 heading-4--dark link">News</h3>
           </NavLink>
-          <NavLink className="link" to="/news">
+          <NavLink className="link" to="#">
             <GiNewspaper className="sidebar__icon " title="News" />
           </NavLink>
 
-          <NavLink className="link" to="/about">
+          <NavLink className="link" to="#">
             <h3 className="heading-4 heading-4--dark link">About</h3>
           </NavLink>
-          <NavLink className="link" to="/about">
+          <NavLink className="link" to="#">
             <GiInfo className="sidebar__icon " title="About" />
           </NavLink>
         </div>

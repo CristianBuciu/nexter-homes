@@ -4,7 +4,7 @@
   &__pictures {
     background-image: linear-gradient(
       to right,
-      rgba(white, 1),
+      rgba($color-grey-light-1, 0.5),
       rgba($color-grey-light-1, 1)
     );
     background-position: center;
@@ -14,58 +14,66 @@
     grid-column: full-start / col-end 4;
 
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+
     opacity: 0;
-    transform: translateX(-100%);
+
     z-index: 2;
     @media (min-width: 320px) and (max-width: 480px) {
       grid-column: full-start / full-end;
-      height: 25rem;
+      height: 40rem;
     }
   }
-  &__img--1 {
+  &__img {
     width: 100%;
-    grid-row: 2 / 6;
-    grid-column: 2 / 6;
-    z-index: 1;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    &:hover {
-      z-index: 3;
-      transform: scale(1.2);
-      transform-origin: center;
-      box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    &--1 {
+      grid-row: 2 / 7;
+      grid-column: 3 / 11;
+      z-index: 0;
+
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+        transform-origin: center;
+        z-index: 3;
+        box-shadow: 0.5rem 0.5rem $color-grey-light-2,
+          -0.5rem -0.5rem $color-primary;
+      }
     }
-  }
-  &__img--2 {
-    width: 115%;
-    grid-row: 3 /5;
-    grid-column: 5 / 8;
-    z-index: 0;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    &:hover {
-      z-index: 3;
-      transform: scale(1.4);
-      transform-origin: center;
-      box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
+    &--2 {
+      grid-row: 5 /10;
+      grid-column: 5 / 12;
+
+      z-index: 1;
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.05);
+        transform-origin: center;
+        z-index: 3;
+        box-shadow: 0.5rem 0.5rem $color-grey-light-2,
+          -0.5rem -0.5rem $color-primary;
+      }
     }
-  }
-  &__img--3 {
-    transform: translateY(-1.5rem) scale(1);
-    width: 120%;
-    grid-row: 6 /8;
-    grid-column: 3 / 7;
-    z-index: 1;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    &:hover {
-      transform: scale(1.15);
-      transform-origin: center;
-      z-index: 3;
-      box-shadow: 1rem 1rem $color-grey-light-2, -1rem -1rem $color-primary;
+    &--3 {
+      grid-row: 7 /11;
+      grid-column: 2 / 7;
+      z-index: 2;
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+        transform-origin: center;
+        z-index: 3;
+        box-shadow: 0.5rem 0.5rem $color-grey-light-2,
+          -0.5rem -0.5rem $color-primary;
+      }
     }
   }
 }

@@ -12,6 +12,10 @@
     padding: 4rem 1rem;
     grid-column: full-start / full-end;
   }
+  @media only screen and (max-width: $bp-tablet) {
+    grid-column: full-start / full-end;
+    column-gap: 2rem;
+  }
   &__heading {
     color: $color-cta;
     text-align: center;
@@ -24,6 +28,9 @@
     row-gap: 5vh;
     align-items: center;
     white-space: nowrap;
+    @media only screen and (max-width: $bp-tablet) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
     @media (min-width: 320px) and (max-width: 480px) {
       grid-template-columns: max-content max-content;
     }

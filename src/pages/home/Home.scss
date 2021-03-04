@@ -3,7 +3,7 @@
 .grid-container {
   position: relative;
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
   grid-template-columns:
     [full-start] minmax(2rem, 1fr) [center-start] repeat(
       8,
@@ -13,5 +13,8 @@
   overflow-x: hidden;
   @media (min-width: 320px) and (max-width: 480px) {
     grid-template-rows: 95vh min-content max-content repeat(4, min-content);
+  }
+  @media only screen and (max-width: $bp-tablet) {
+    grid-template-rows: 82vh min-content max-content repeat(4, min-content);
   }
 }

@@ -36,9 +36,7 @@ const PropertiesSection = () => {
             <RiMoneyDollarBoxLine className="home-card__icons" />
             <p>Price: {house.priceDollars}</p>
           </div>
-          <button className="home-card__cta-button button">
-            Contact Realtor
-          </button>
+          <button className="home-card__cta-button ">Contact Realtor</button>
         </div>
       ))}
     </section>

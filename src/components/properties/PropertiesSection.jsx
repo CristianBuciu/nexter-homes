@@ -29,7 +29,7 @@ const PropertiesSection = () => {
           <div className="home-card__surface home-card__flex">
             <BiArea className="home-card__icons" />
             <p>
-              Area: {house.sqareMeter} m<sup>2</sup>
+              Area: {house.squareMeter} m<sup>2</sup>
             </p>
           </div>
           <div className="home-card__price home-card__flex">
